@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url(./pq.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#add-task-container{
+    width: 350px;
+    padding: 20px 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 3px;
+    display: flex;
+    margin-bottom: 20px;
+   
+}
+
+.head h1{
+    position: absolute;
+    top:27% ;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    font-size: 2.5rem;
+    border-bottom: solid 2px black;
+    /* background-color:black; */
+    color:black;
+}
+input{
+    flex: 5;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+input:hover{
+    border:solid 3px rgb(25, 82, 88);
+}
+#add-task{
+    flex: 1;
+    transition: .3s;
+    font-size: 1.2rem;
+    padding: 5px;
+    background-color: white;
+    color: rgb(25, 82, 88);
+    border: solid 2px rgb(25, 82, 88);
+    border-radius: 10px;
+    cursor: pointer;
+}
+#add-task:hover{
+    background-color: rgb(25, 82, 88);
+    color: white;
+}
+.task{
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 3px;
+    padding: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.task li{
+    flex: 4;
+    list-style: none;
+    padding: 5px;
+    font-size: 1.3rem;
+    margin: 5px;
+}
+.task button{
+    flex: 1;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+}
+.task .checktask{
+    color: orange;
+    margin-right: 5px;
+    border: solid 2px orange;
+    font-size: 2rem;
+    transition: .3s;
+}
+.task .checktask:hover{
+    background-color: orange;
+    color: white;
+}
+.task .deletetask {
+    color: red;
+    margin-right: 5px;
+    border: solid 2px red;
+    font-size: 2rem;
+    transition: .3s;
+}
+.task .deletetask:hover {
+    background-color: red;
+    color: white;
+}
