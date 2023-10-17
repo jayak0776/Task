@@ -13,19 +13,23 @@ body{
     position: relative;
 }
 #add-task-container{
-    width: 350px;
-    padding: 20px 10px;
-    background-color: white;
-    border-radius: 20px;
+    width: 500px;
+    padding: 15px 15px;
+    background-color: rgb(48, 71, 76);
+    border-radius: 7px;
     box-shadow: 0 0 3px;
-    display: flex;
     margin-bottom: 20px;
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shadow{
+    width: 700px;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .head h1{
-    position: absolute;
-    top:27% ;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -36,40 +40,50 @@ body{
     /* background-color:black; */
     color:black;
 }
+.f{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
 input{
     flex: 5;
     margin-right: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 1.2rem;
-    padding: 5px;
+    padding: 10px;
+    background-color:rgb(38, 56, 60) ;
+    color: white;
+    border: none;
 }
-input:hover{
-    border:solid 3px rgb(25, 82, 88);
-}
+/* input:hover{
+    border:solid 3px rgb(38, 56, 60);
+} */
 #add-task{
     flex: 1;
     transition: .3s;
-    font-size: 1.2rem;
-    padding: 5px;
-    background-color: white;
-    color: rgb(25, 82, 88);
-    border: solid 2px rgb(25, 82, 88);
+    font-size:35px;
+    background-color:rgb(38, 56, 60) ;
+    color: black;
     border-radius: 10px;
+    border: none;
     cursor: pointer;
 }
 #add-task:hover{
-    background-color: rgb(25, 82, 88);
-    color: white;
+    background-color: rgb(36, 61, 65);
+    color: black;
 }
 .task{
-    width: 100%;
-    background-color: white;
+    width: 450px;
+    background-color: rgb(38, 56, 60);
     border-radius: 10px;
-    box-shadow: 0 0 3px;
-    padding: 5px;
+    box-shadow: 0 0 3px black;
+    padding: 10px;
     margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
+    color: white;
 }
 .task li{
     flex: 4;
@@ -82,7 +96,7 @@ input:hover{
     flex: 1;
     border-radius: 10px;
     cursor: pointer;
-    background-color: white;
+    background-color: rgb(38, 56, 60);
 }
 .task .checktask{
     color: orange;
@@ -93,7 +107,7 @@ input:hover{
 }
 .task .checktask:hover{
     background-color: orange;
-    color: white;
+    color: black;
 }
 .task .deletetask {
     color: red;
@@ -104,5 +118,25 @@ input:hover{
 }
 .task .deletetask:hover {
     background-color: red;
-    color: white;
+    color: black;
+}
+
+
+@media screen and (max-width: 830px){
+    .shadow{
+    width: 700px;
+    height: 500px;
+    }
+}
+@media screen and (max-width: 477px){
+    .shadow{
+    width: 370px;
+    height: 500px;
+    }
+    #add-task-container{
+    width: 350px;
+    }
+    .task{
+    width: 300px;
+    }
 }
