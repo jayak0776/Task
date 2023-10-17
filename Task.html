@@ -14,23 +14,27 @@
     <link rel="icon" href="./task-list-svgrepo-com.svg" />
   </head>
   <body>
-    <div class="container">
-      <div class="head">
-        <h1>
-          <img
-            src="./task-vector-icon-removebg-preview.png"
-            alt=""
-            width="70px"
-            height="70px"
-          />
-          Mark your Tasks
-        </h1>
+    <div class="shadow">
+      <div class="container">
+        <div class="head">
+          <h1>
+            <img
+              src="./task-vector-icon-removebg-preview.png"
+              alt=""
+              width="70px"
+              height="70px"
+            />
+            Mark your Tasks
+          </h1>
+        </div>
+        <div class="f">
+          <div id="add-task-container">
+            <input type="text" placeholder="Enter Tasks..." id="input-task" />
+            <button id="add-task">+</button>
+          </div>
+          <p id="task-container"></p>
+        </div>
       </div>
-      <div id="add-task-container">
-        <input type="text" placeholder="Enter Tasks..." id="input-task" />
-        <button id="add-task">+</button>
-      </div>
-      <div id="task-container"></div>
     </div>
     <script src="./Task.js"></script>
   </body>
